@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+// Widget for Vertical Space
 Widget getVerSpace(double verSpace) {
   return SizedBox(
     height: verSpace,
   );
 }
 
+// Widget for Horizontal Space
 Widget getHorSpace(double verSpace) {
   return SizedBox(
     width: verSpace,
   );
 }
 
+// Widget for Text fontWeight 600 and size 14
 getCustomTextStyleW6S14({color}) {
   return TextStyle(
     color: color,
@@ -21,6 +24,7 @@ getCustomTextStyleW6S14({color}) {
   );
 }
 
+// Widget for Text fontWeight 600 and size 14
 Widget getCustomTextW6S14({text, color, textAlign, maxLines}) {
   return Text(
     text,
@@ -33,6 +37,8 @@ Widget getCustomTextW6S14({text, color, textAlign, maxLines}) {
         overflow: TextOverflow.ellipsis),
   );
 }
+
+// Widget for Text size 16
 Widget getCustomTextS16({text, color, textAlign, maxLines}) {
   return Text(
     text,
@@ -45,6 +51,7 @@ Widget getCustomTextS16({text, color, textAlign, maxLines}) {
   );
 }
 
+// Widget for Text fontWeight 600 and size 16
 Widget getCustomTextW6S16({
   text,
   color,
@@ -59,6 +66,8 @@ Widget getCustomTextW6S16({
     ),
   );
 }
+
+// Widget for Text fontWeight 600 and size 18
 Widget getCustomTextW6S18({
   text,
   color,
@@ -74,6 +83,7 @@ Widget getCustomTextW6S18({
   );
 }
 
+// Widget for Text Form Field
 Widget getCustomTextFormField(
     {controller,
     validator,
@@ -125,6 +135,7 @@ Widget getCustomTextFormField(
   );
 }
 
+// Widget for Button
 Widget fillColorButton({color,text, loading = false}) {
   return Container(
     height: 4.5.h,

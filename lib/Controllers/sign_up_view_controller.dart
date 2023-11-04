@@ -30,7 +30,7 @@ class SignupController extends GetxController {
         toFirestore: (users, _) => users.toJson(),
       );
 
-  // Sign Up Method
+  // Sign Up handler
   signUpHandler({
     fullName,
     age,

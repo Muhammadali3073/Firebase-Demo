@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'get_user_data_view_model.dart';
+import 'get_user_data_controller.dart';
 
 class EditProfileController extends GetxController {
   GetUserDataController getUserDataController =

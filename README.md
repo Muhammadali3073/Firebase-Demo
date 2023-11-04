@@ -16,5 +16,10 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
+<<<<<<< Updated upstream
 Flutter 3.13.5 
 Dart 3.1.2
+=======
+Flutter 3.13.5
+Dart 3.1.2
+>>>>>>> Stashed changes

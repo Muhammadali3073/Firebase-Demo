@@ -1,12 +1,11 @@
-import 'dart:developer';
 
 import 'package:email_validator/email_validator.dart';
 import 'package:firebase_demo/View/Widgets/widgets.dart';
-import 'package:firebase_demo/ViewModel/sign_in_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../../Controllers/sign_in_view_controller.dart';
 import '../../Routes/routes_name.dart';
 
 class LoginScreen extends StatefulWidget {

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import '../../Controllers/get_user_data_controller.dart';
+import '../../Controllers/sign_in_view_controller.dart';
 import '../../Routes/routes_name.dart';
-import '../../ViewModel/get_user_data_view_model.dart';
-import '../../ViewModel/sign_in_view_model.dart';
 import '../Widgets/widgets.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -20,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   SignInController signInController =
       Get.put(SignInController(), tag: 'signInController');
 
+  // Call User Data to Home Screen when user already login
   getUserDataMethod() {
     if (getUserDataController.getUserDataRxModel.value == null) {
       getUserDataController.getUserData();

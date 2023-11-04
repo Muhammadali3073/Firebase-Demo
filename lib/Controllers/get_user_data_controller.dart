@@ -19,6 +19,7 @@ class GetUserDataController extends GetxController {
     toFirestore: (users, _) => users.toJson(),
   );
 
+  // Get User Data
   getUserData({userId}) async {
     isGetUserDataLoading.value = true;
 

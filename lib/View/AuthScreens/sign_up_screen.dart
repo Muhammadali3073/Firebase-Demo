@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-import '../../ViewModel/sign_up_view_model.dart';
+import '../../Controllers/sign_up_view_controller.dart';
 import '../Widgets/widgets.dart';
 
 class SignUpScreen extends StatefulWidget {

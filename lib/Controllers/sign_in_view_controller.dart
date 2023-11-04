@@ -7,18 +7,23 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../Routes/routes_name.dart';
 import '../Utils/Validations/validations.dart';
-import 'get_user_data_view_model.dart';
+import 'get_user_data_controller.dart';
 
 class SignInController extends GetxController {
   GetUserDataController getUserDataController =
       Get.put(GetUserDataController(), tag: 'getUserDataController');
+
+  // Controller for TextEditingController
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+
+
   var isSignInLoading = false.obs;
   var isSignOutLoading = false.obs;
 
   final FirebaseAuth auth = FirebaseAuth.instance;
 
+  // Sign in handler
   signInHandler({userEmail, userPassword}) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
 
@@ -45,6 +50,7 @@ class SignInController extends GetxController {
     }
   }
 
+  // Sign out handler
   signOutHandler() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     try {

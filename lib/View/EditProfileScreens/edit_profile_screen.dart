@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-import '../../ViewModel/edit_profile_view_model.dart';
+import '../../Controllers/edit_profile_controller.dart';
 import '../Widgets/widgets.dart';
 
 class EditProfileScreen extends StatefulWidget {
@@ -20,6 +20,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // Set User data to TextEditControllers
     editProfileController.fullNameController.text = editProfileController
         .getUserDataController.getUserDataRxModel.value!.fullName
         .toString();
